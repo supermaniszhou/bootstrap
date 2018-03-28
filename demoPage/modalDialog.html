@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" crossorigin="anonymous"/>
+    <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css" crossorigin="anonymous"/>
+    <link type="text/css" rel="stylesheet" href="../bootstrapTable/bootstrap-table.min.css" crossorigin="anonymous"/>
+    <link type="text/css" rel="stylesheet" href="../bootstrapDialog/dist/css/bootstrap-dialog.min.css"/>
+    <script src="../bootstrap/js/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="../bootstrapTable/bootstrap-table.js" crossorigin="anonymous"></script>
+    <script src="../bootstrapTable/locale/bootstrap-table-zh-CN.js" crossorigin="anonymous"></script>
+    <script src="../bootstrapDialog/dist/js/bootstrap-dialog.min.js"></script>
+    <style type="text/css">
+        .modal-dialog {
+            width: 900px;
+            margin: 30px auto
+        }
+    </style>
+</head>
+<body>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+<input type="button" class="btn btn-block" onclick="pageShow()" value="dialog">
+<script>
+
+    function pageShow() {
+        BootstrapDialog.show({
+            title: '测试',
+            message: '<iframe src="content.html" width="800px" height="600px" frameborder="0" scrolling="no"></iframe>',
+            draggable:true,//窗口可拖拽
+            buttons: [{
+                id: 'btn-ok',
+                icon: 'glyphicon glyphicon-check',
+                label: '关闭',
+                cssClass: 'btn-primary',
+                data: {
+                    js: 'btn-confirm',
+                    'user-id': '3'
+                },
+                autospin: false,
+                action: function (dialogRef) {
+                    dialogRef.close();
+                }
+            }, {
+                id: 'btn-save',
+                label: '保存',
+                cssClass: 'btn-primary',
+                data: {
+                    js: 'btn-confirm',
+                    'user-id': '3'
+                },
+                autospin: false,
+                action: function (dialogRef) {
+                    dialogRef.close();
+                }
+            }]
+        });
+
+    }
+</script>
+<!-- Modal -->
+
+
+</body>
+</html>

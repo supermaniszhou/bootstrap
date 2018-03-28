@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" crossorigin="anonymous"/>
+    <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css" crossorigin="anonymous"/>
+    <link type="text/css" rel="stylesheet" href="../bootstrapTable/bootstrap-table.min.css" crossorigin="anonymous"/>
+    <script src="../bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="../bootstrapTable/bootstrap-table.js" crossorigin="anonymous"></script>
+    <script src="../bootstrapTable/locale/bootstrap-table-zh-CN.js" crossorigin="anonymous"></script>
+    <script>
+
+
+    </script>
+</head>
+<body>
+
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+<div>
+    <div class="row">
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-6">.col-md-6</div>
+    </div>
+
+
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+        </div>
+        <button type="submit" class="btn btn-default">Send invitation</button>
+    </form>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+                <div class="col-md-1">.col-md-1</div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">.col-md-8</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container body-content" style="padding-top:20px;">
+    <form class="form-inline">
+        <div class="row">
+            <div class="col-sm-4">
+                <label class="control-label">id：</label>
+                <input id="txtTitle" type="text" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label class="control-label">名字：</label>
+                <input id="txtAuthor" type="text" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label class="control-label">价格：</label>
+                <input id="txtPublish" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="row text-right" style="margin-top:20px;">
+            <div class="col-sm-12">
+                <input class="btn btn-primary" type="button" value="查询" onclick="SearchData()">
+                <input class="btn btn-default" type="button" value="批量删除" onclick="BtchDeleteBook()">
+            </div>
+        </div>
+    </form>
+    <table id="table2">
+
+    </table>
+    <script>
+        $('#table2').bootstrapTable({
+//            url:'',
+//            queryParamsType: '',              //默认值为 'limit' ,在默认情况下 传给服务端的参数为：offset,limit,sort
+            queryParams: queryParams,
+            method: "post",
+            pagination: true,
+            pageNumber: 1,
+//            pageSize: 5,
+            pageList: [10, 20, 50, 100],
+            sidePagination: "client",         //分页方式：client客户端分页，server服务端分页（*）
+            striped: true,                   //是否显示行间隔色
+            cache: false,
+            uniqueId: "id",                       //每一行的唯一标识，一般为主键列
+            height: 500,
+            paginationPreText: "上一页",
+            paginationNextText: "下一页",
+            search: true,
+            showRefresh: true,
+            detailView: true,
+            detailFormatter: function (index, row) {
+                return "id:" + row.id + ";名字：" + row.name + "；价格：" + row.price;
+            },
+            sortable: true,
+            columns: [
+                {checkbox: true}
+                , {
+                    field: 'id',
+                    title: 'Item_ID',
+                    sortable: true
+                }, {
+                    field: 'name',
+                    title: 'Item_Name'
+                }, {
+                    field: 'price',
+                    title: 'Item_Price'
+                },
+                {
+                    title: '操作',
+                    field: 'id',
+                    formatter: opeate
+                }
+            ],
+
+
+            data: [{
+                id: 1,
+                name: '这是测试一',
+                price: '$1'
+            }, {
+                id: 2,
+                name: '这是测试二 2',
+                price: '$2'
+            }, {
+                id: 3,
+                name: '这是测试3 2',
+                price: '$2'
+            }, {
+                id: 4,
+                name: '这是测试4 2',
+                price: '$2'
+            }, {
+                id: 5,
+                name: '这是测试5 2',
+                price: '$2'
+            }, {
+                id: 6,
+                name: '这是测试6 2',
+                price: '$2'
+            }, {
+                id: 7,
+                name: '这是测试7 2',
+                price: '$2'
+            }, {
+                id: 8,
+                name: '这是测试82',
+                price: '$2'
+            }, {
+                id: 9,
+                name: '这是测试9 2',
+                price: '$2'
+            }, {
+                id: 10,
+                name: '这是测试10 2',
+                price: '$2'
+            }, {
+                id: 11,
+                name: '这是测试11 2',
+                price: '$2'
+            }, {
+                id: 12,
+                name: '这是测试12 2',
+                price: '$2'
+            }
+            ]
+        });
+
+        function opeate(value, row, index) {
+            var html = '<a href="javascript:alert(' + index + ')">编辑</a>';
+            html += '　<a href="javascript:void(0)" onclick="DeleteBook(' + index + ')" >删除</a>';
+            return html;
+        }
+        //查询条件
+        function queryParams(params) {
+            return {
+                pageSize: params.pageSize,
+                pageIndex: params.pageNumber,
+                Title: $.trim($("#txtTitle").val()),
+                Author: $.trim($("#txtAuthor").val()),
+                Publish: $.trim($("#txtPublish").val()),
+            };
+        }
+        //查询事件
+        function SearchData() {
+            $('#table').bootstrapTable('refresh', {pageNumber: 1});
+        }
+        //删除操作
+        function DeleteBook(bookId) {
+            if (confirm("确定删除图书ID：" + bookId + "吗？")) {
+                alert("执行删除操作");
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
