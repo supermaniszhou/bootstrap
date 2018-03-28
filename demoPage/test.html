@@ -29,7 +29,7 @@
     <aside id="sidebar" class="nav-collapse">
         <ul class="sidebar-menu" id="nav-accordion">
             <li>
-                <a class="active" href="index.html">
+                <a class="active" href="#" onclick="toIndex()">
                     <i class="fa fa-dashboard"></i>
                     <span>Dashboard</span>
                 </a>
@@ -68,7 +68,7 @@
     </aside>
     <section id="main-content">
         <section class="wrapper">
-            <div id="owl-demo" class="owl-carousel owl-theme">dddd</div>
+            <div id="div2" style="height: auto;width: auto;"></div>
         </section>
     </section>
     <footer>
@@ -76,30 +76,37 @@
     </footer>
 </section>
 <script>
+    $(function () {
+        toIndex();
+    })
+
+    function toIndex() {
+        var hei = window.innerHeight;
+        var t = '<iframe src="index.html" width="100%" frameborder="0" scrolling="no" height="'+hei+'"></iframe>';
+
+        $("#div2").html(t);
+    }
+
     function disableDiv() {
-        $('.fa-bars').click(function () {
-            if ($('#sidebar > ul').is(":visible") === true) {
-                $('#main-content').css({
-                    'margin-left': '0px'
-                });
-                $('#sidebar').css({
-                    'margin-left': '-210px'
-                });
-                $('#sidebar > ul').hide();
-                $("#container").addClass("sidebar-closed");
-            } else {
-                $('#main-content').css({
-                    'margin-left': '210px'
-                });
-                $('#sidebar > ul').show();
-                $('#sidebar').css({
-                    'margin-left': '0'
-                });
-                $("#container").removeClass("sidebar-closed");
-            }
-            var owl = $("#owl-demo").data("owlCarousel");
-            owl.reinit();
-        });
+        if ($('#sidebar > ul').is(":visible") === true) {
+            $('#main-content').css({
+                'margin-left': '0px'
+            });
+            $('#sidebar').css({
+                'margin-left': '-210px'
+            });
+            $('#sidebar > ul').hide();
+            $("#container").addClass("sidebar-closed");
+        } else {
+            $('#main-content').css({
+                'margin-left': '210px'
+            });
+            $('#sidebar > ul').show();
+            $('#sidebar').css({
+                'margin-left': '0'
+            });
+            $("#container").removeClass("sidebar-closed");
+        }
     }
 
 </script>
